@@ -1,0 +1,20 @@
+*,*:before,*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+$grid-columns : 24;
+
+$xll: 1600px;
+$xl: 1200px;
+$lg:992px;
+$md: 768px;
+$sm:576px;
+$xs:575px;
+$responsiveSizes:("xs":$xs,"sm":$sm,"md":$md,"lg":$lg,"xl":$xl,"xll":$xll)
+

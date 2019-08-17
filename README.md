@@ -1,29 +1,16 @@
-# spirit-ui
+# spirit-ui -- 一个VUE UI组件库
 
-## Project setup
+## 安装
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
+ npm install spirit-ui
+ 
+ yarn add spirit-ui
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
+## 使用
+一般在 webpack 入口页面 main.js 中如下配置：
+```javascript
+import Spirit from 'spirit-ui';
+import 'Spirit/dist/spirit-ui.css';
 ```
 
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

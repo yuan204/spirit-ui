@@ -1,15 +1,29 @@
 {
   "name": "spirit-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "基于vue的ui组件库",
+  "main": "dist/spirit-ui.umd.min.js",
+  "author": "gaolei",
+  "keywords": [
+    "Vue",
+    "UI"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "lib": "vue-cli-service build --target lib --name spirit-ui src/index.js"
   },
   "dependencies": {
+    "async-validator": "^2.0.1",
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "highlight.js": "^9.15.9",
+    "node-sass": "^4.12.0",
+    "vue": "^2.6.10",
+    "vue-highlight.js": "^3.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",
@@ -18,8 +32,10 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "raw-loader": "^3.1.0",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "vuepress": "^1.0.3"
   }
 }

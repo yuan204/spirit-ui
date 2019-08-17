@@ -1,0 +1,19 @@
+.slide-enter, .slide-leave-to {
+  transform: scaleY(0);
+
+
+
+
+}
+
+.slide-enter-active, .slide-leave-active {
+  transition: all .1s linear;
+
+}
+
+.slide-enter-to, .slide-leave {
+  transform: scaleY(1);
+
+
+}
+
