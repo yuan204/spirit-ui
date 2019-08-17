@@ -1,6 +1,7 @@
 module.exports = {
     title: 'Spirit UI',
-    description: 'Just playing around',
+    base: '/spirit-ui/',
+    description: '一个基于vue的ui组件库',
     themeConfig: {
         sidebar: [
             {
