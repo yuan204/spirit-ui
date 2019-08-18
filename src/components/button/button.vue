@@ -1,10 +1,10 @@
 <template>
     <button class="s-button" :class="{normal,[type]:type,active}" @click="handleClick"  :disabled = "disabled" >
         <template v-if="loading && isLoading">
-            <s-icon name="loading" class="s-icon icon-loading"></s-icon>
+            <s-icon name="loading" class="s-icon icon-loading" :class="{'s-no-text':!hasText}"></s-icon>
         </template>
         <template v-else>
-            <s-icon :name="icon" v-if="icon" :class="['s-icon',{'right-icon':!isLeft}]"></s-icon>
+            <s-icon :name="icon" v-if="icon" :class="['s-icon',{'right-icon':!isLeft},{'s-no-text':!hasText}]"></s-icon>
         </template>
 
         <slot></slot>
@@ -53,12 +53,14 @@
         computed: {
             isLeft() {
                 return this.position === 'left'
-            }
+            },
+
         },
         data() {
             return {
                 isLoading: false,
-                active: false
+                active: false,
+                hasText: true
             }
         },
         methods: {
@@ -71,6 +73,10 @@
             //     this.active = false
             // }
         },
+        mounted() {
+            console.log(this.$slots.default);
+            if (!this.$slots.default) this.hasText = false
+        }
 
 
     }
@@ -78,6 +84,7 @@
 
 <style scoped lang="scss">
     @import "../../styles/color";
+    @import "../../styles/common";
     .s-button {
         height: 32px;
         padding: 0 1em;
@@ -148,6 +155,9 @@
 
         .s-icon {
             margin-right: 7px;
+        }
+        .s-no-text {
+            margin: 0;
         }
 
         .right-icon {

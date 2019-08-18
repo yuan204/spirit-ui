@@ -115,7 +115,7 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             padding: 10px;
-            margin-right: 40px;
+            /*margin-right: 40px;*/
             display: inline-block;
             .fake-radio {
                 position: absolute;

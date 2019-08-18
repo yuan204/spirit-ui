@@ -2,7 +2,7 @@
     <section style="margin-top: 40px">
         <h2><slot name="title"></slot></h2>
         <p class="desc"><slot name="description"></slot></p>
-        <div class="content" v-for="n in count">
+        <div class="content" v-for="n in count" :key="n">
             <div>
                 <div class="comp">
                     <slot :name="'component' + n" ></slot>
@@ -20,7 +20,7 @@
                         <div class="codes-header-inner">
                             <s-icon name="down"></s-icon>
                             <span style="display: none">
-                         {{showCodes ?  '隐藏代码' :'显示代码'}}
+                         {{showCodes[n-1] ?  '隐藏代码' :'显示代码'}}
                      </span>
                         </div>
                     </div>

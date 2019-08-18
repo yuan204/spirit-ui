@@ -3,7 +3,7 @@
         <h2><slot name="title"></slot></h2>
         <p class="desc"><slot name="description"></slot></p>
         <div class="content">
-            <div class="comp">
+            <div class="comp" >
                 <slot name="component"></slot>
             </div>
             <div class="codes" :class="{codesClass:showCodes}">
@@ -65,7 +65,7 @@
 
 <style scoped lang="scss">
     section {
-        width: 100%;
+        /*width: 100%;*/
         margin-top: 20px;
 
     }

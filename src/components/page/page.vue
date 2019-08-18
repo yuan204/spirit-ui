@@ -1,24 +1,31 @@
 <template>
     <div class="s-page">
         <span v-if="showTotal" class="s-page-total">共 {{total}} 条</span>
-        <s-button :icon="prevText || 'leftArrow'" type="text"
+        <s-button v-if="prevText" type="text"
                   @click="dec" :disabled = "curPage === 1"
                   :class="{background}"
+                  class="s-text"
 
         >
             {{prevText}}
         </s-button>
+        <s-button v-else icon="leftArrow" type="text"
+                  @click="dec" :disabled = "curPage === 1"
+                  :class="{background}"
+
+        >
+        </s-button>
         <ul class="s-page-numbers">
             <li  @click="handleClickPage(1)" :class="{active:curPage === 1,background}"  >1</li>
-            <li @click="handlePrevClick" v-show="showPrev" > <s-button icon="more" type="text" :class="{background}"></s-button></li>
+            <li @click="handlePrevClick" v-show="showPrev" style="padding:0"> <s-button icon="more" type="text" :class="{background}"></s-button></li>
             <li v-for="n in pages" :class="{active:curPage === n,background}" @click="handleClickPage(n)">{{n}}</li>
-            <li @click="handleNextClick" v-show="showNext" > <s-button icon="more" type="text" :class="{background}"></s-button></li>
+            <li @click="handleNextClick" v-show="showNext" style="padding:0"> <s-button icon="more" type="text" :class="{background}"></s-button></li>
             <li  @click="handleClickPage(pageNumber)" :class="{active:curPage === pageNumber,background}" v-if="pageNumber !== 1">{{pageNumber}}</li>
 
 
         </ul>
-        <s-button :icon="nextText || 'arrow-right'" type="text" @click="inc" :disabled = "curPage === pageNumber" :class="{background}">
-            {{nextText}}
+        <s-button v-if="nextText" type="text" @click="inc" :disabled = "curPage === pageNumber" :class="{background}" class="s-text">{{nextText}}</s-button>
+        <s-button v-else icon="arrow-right" type="text" @click="inc" :disabled = "curPage === pageNumber" :class="{background}">
         </s-button>
 
         <s-select v-if="pageSizes" v-model="size">
@@ -196,6 +203,10 @@
         .s-button {
             padding: 0;
             height: 28px;
+            width: 28px;
+            &.s-text {
+                width: auto;
+            }
 
 
         }
@@ -228,11 +239,13 @@
 
         .s-select {
             width: 100px;
+            flex-shrink: 0;
         }
 
         .s-page-jump {
             color: #606266;
             display: inline-block;
+            flex-shrink: 0;
 
             input {
                 height: 28px;
@@ -246,8 +259,14 @@
 
         .s-page-total {
             color: #606266;
-            display: inline-block;
+            /*display: inline-flex;*/
+            /*align-items: center;*/
             margin-right: 5px;
+            flex-shrink: 0;
+        }
+        .s-button {
+            flex-shrink: 0;
+
         }
     }
 </style>

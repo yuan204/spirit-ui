@@ -1,5 +1,6 @@
 <template>
    <div class="btns">
+       <s-button icon="more" type="text" ></s-button>
        <s-button>默认按钮</s-button>
        <s-button type="primary">primary按钮</s-button>
        <s-button type="info">info按钮</s-button>

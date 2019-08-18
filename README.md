@@ -1,5 +1,4 @@
 # spirit-ui 
-![GitHub All Releases](https://img.shields.io/github/downloads/gaolei11/spirit-ui/total)
 ![GitHub](https://img.shields.io/github/license/gaolei11/spirit-ui)
 ![npm](https://img.shields.io/npm/v/spirit-ui)
 ## 介绍

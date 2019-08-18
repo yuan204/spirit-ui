@@ -1,6 +1,6 @@
 import Vue from 'vue'
 // import IconDemo from "./demo/iconDemo";
-// import ButtonDemo from "./demo/button";
+import ButtonDemo from "./demo/button";
 // import ButtonGroupDemo from "./demo/button-group";
 // import SwitchDemo from "./demo/switch";
 // import InputDemo from "./demo/input";
@@ -13,7 +13,7 @@ import ContainerDemo from "./demo/container";
 // import CollapseDemo from "./demo/collapse";
 // import StickyDemo from "./demo/sticky";
 // import TabsDemo from "./demo/tabs";
-// import PageDemo from "./demo/page";
+import PageDemo from "./demo/page";
 import MessagePlugin from "@/components/message";
 // import MessgeDemo from "./demo/message";
 // import CarouselDemo from "./demo/carousel";
@@ -27,5 +27,5 @@ Vue.use(MessagePlugin)
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(ContainerDemo),
+  render: h => h(PageDemo),
 }).$mount('#app')

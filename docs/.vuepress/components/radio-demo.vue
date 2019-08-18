@@ -89,7 +89,7 @@
         </template>
         <template #component>
 
-                <div>
+                <div style="min-width: 300px">
                     <s-radio v-model="fruit6" value="apple"  border>苹果</s-radio>
                     <s-radio v-model="fruit6" value="pear"  border>梨</s-radio>
                     <s-radio v-model="fruit6" value="banana"  border>香蕉</s-radio>

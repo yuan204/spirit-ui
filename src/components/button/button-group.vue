@@ -15,13 +15,15 @@
     @import "../../styles/common";
     .s-button-group {
         font-size: 0;//空格和换行也占了空间，所以设置为0去除所占据的大小
+        display: flex;
         & > * {
             /*border-left-color: transparent;*/
             /*border-right-color: transparent;*/
             border: $borderbase;
             border-right: none;
             border-radius: 0;
-            display: inline;
+            /*display: inline;*/
+            flex-shrink: 0;
 
         }
         & > *:first-child {
