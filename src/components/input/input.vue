@@ -222,6 +222,8 @@
         width: 100%;
         display: inline-block;
         textarea {
+            border: 1px solid $border;
+            border-radius: 4px;
             width: 100%;
             min-height: 33px;
             padding: .5em .5em;

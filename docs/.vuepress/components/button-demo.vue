@@ -146,9 +146,9 @@
 
                 items:[
                     {parameter:"icon",spec:"图标名",type:"String",optionValue:"—",defaultValue:"—"},
-                    {parameter:"position",spec:"图标的位置",type:"String",optionValue:"left,right",defaultValue:"left"},
+                    {parameter:"position",spec:"图标的位置",type:"String",optionValue:"left | right",defaultValue:"left"},
                     {parameter:"loading",spec:"是否加载",type:"Boolean",optionValue:"—",defaultValue:"false"},
-                    {parameter:"type",spec:"类型",type:"String",optionValue:"text,info,primary,warning,danger,success",defaultValue:"—"},
+                    {parameter:"type",spec:"类型",type:"String",optionValue:"text | info | primary | warning | danger | success",defaultValue:"—"},
                     {parameter:"disabled",spec:"是否禁用按钮",type:"Boolean",optionValue:"—",defaultValue:"false"},
                 ],
                 code1: `<s-button>默认按钮</s-button>

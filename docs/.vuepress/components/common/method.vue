@@ -1,5 +1,5 @@
 <template>
-    <section style="margin-top: 40px">
+    <section style="margin-top: 40px; ">
         <h2><slot name="title"></slot></h2>
         <table class="table">
             <thead>

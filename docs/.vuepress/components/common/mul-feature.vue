@@ -79,6 +79,7 @@
 <style scoped lang="scss">
     section {
         margin-top: 20px;
+
     }
     .desc {
         margin: 10px 0;

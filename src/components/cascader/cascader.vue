@@ -294,6 +294,7 @@
         .s-cascader-panels {
             display: flex;
             position: absolute;
+            z-index: 200;
             transform-origin: 0 0;
         }
 

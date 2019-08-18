@@ -9,7 +9,7 @@
         </template>
         <template #component>
             <s-tabs v-model="activeName">
-                <s-tab-pane label="标签一" name="name1">标签一的内容</s-tab-pane><s-tab-pane label="标签二" name="name2">标签二的内容</s-tab-pane><s-tab-pane label="很多很多很多很多标签三" name="name3">标签三的内容</s-tab-pane>
+                <s-tab-pane label="标签一" name="name1">标签一的内容</s-tab-pane><s-tab-pane label="标签二" name="name2">标签二的内容</s-tab-pane><s-tab-pane label="标签三" name="name3">标签三的内容</s-tab-pane>
             </s-tabs>
         </template>
     </doc-feature>
@@ -22,7 +22,7 @@
         </template>
         <template #component>
             <s-tabs v-model="activeName">
-                <s-tab-pane label="标签一" name="name1" disabled>标签一的内容</s-tab-pane><s-tab-pane label="标签二" name="name2">标签二的内容</s-tab-pane><s-tab-pane label="很多很多很多很多标签三" name="name3">标签三的内容</s-tab-pane>
+                <s-tab-pane label="标签一" name="name1" disabled>标签一的内容</s-tab-pane><s-tab-pane label="标签二" name="name2">标签二的内容</s-tab-pane><s-tab-pane label="标签三" name="name3">标签三的内容</s-tab-pane>
             </s-tabs>
         </template>
     </doc-feature>
@@ -138,7 +138,7 @@
                 code1: `<s-tabs v-model="activeName">
                 <s-tab-pane label="标签一" name="name1">标签一的内容</s-tab-pane>
                 <s-tab-pane label="标签二" name="name2">标签二的内容</s-tab-pane>
-                <s-tab-pane label="很多很多很多很多标签三" name="name3">标签三的内容</s-tab-pane>
+                <s-tab-pane label="标签三" name="name3">标签三的内容</s-tab-pane>
             </s-tabs>`,
                 jsCode1: `data() {
             return {
@@ -148,7 +148,7 @@
                 code2: `<s-tabs v-model="activeName">
                 <s-tab-pane label="标签一" name="name1" disabled>标签一的内容</s-tab-pane>
                 <s-tab-pane label="标签二" name="name2">标签二的内容</s-tab-pane>
-                <s-tab-pane label="很多很多很多很多标签三" name="name3">标签三的内容</s-tab-pane>
+                <s-tab-pane label="标签三" name="name3">标签三的内容</s-tab-pane>
             </s-tabs>`,
                 code3: `<s-tabs v-model="activeName3" type="card">
                 <s-tab-pane label="标签一" name="name1">标签一的内容</s-tab-pane>

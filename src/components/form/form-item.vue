@@ -3,12 +3,12 @@
         <div class="s-form-item-inner" :style="positionStyle">
             <label v-if="label" :style="{width:this.form.labelWidth,textAlign: form.labelPosition}">{{label}}</label>
             <div class="s-form-content"
-                 :style="{marginLeft:!label?this.form.labelWidth : '',padding:form.labelPosition === 'top' ? '15px 0' : '0 15px'}"
+                 :style="{marginLeft:!label?this.form.labelWidth : '',padding:form.labelPosition === 'top' ? '10px 0' : '0 15px'}"
             >
                 <slot></slot>
             </div>
         </div>
-        <span class="s-message" :style="{marginLeft:label?this.form.labelWidth : ''}">{{message}}</span>
+        <span class="s-message" :style="{marginLeft:label?this.form.labelWidth : '',padding:form.labelPosition === 'top' ? '5px 0' : '0 15px'}">{{message}}</span>
     </div>
 </template>
 

@@ -155,7 +155,7 @@
         }
 
         .s-upload-dragger {
-            width: 360px;
+            max-width: 360px;
             height: 180px;
             border: 1px dashed #d9d9d9;
 

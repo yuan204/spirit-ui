@@ -80,7 +80,7 @@
         </doc-event>
         <doc-slot :infos="items2">
             <template #title>
-                Collapse Slot
+                CollapseItem Slot
             </template>
         </doc-slot>
 
@@ -158,7 +158,7 @@
                 ],
                 items2: [
                     {name:"title",spec:"面板的标题"},
-                    {name:"render-content.js",spec:"面板的具体内容"},
+                    {name:"content",spec:"面板的具体内容"},
                 ],
                     items4: [
                 {name:"change",spec:"激活当前面板时触发,如果是普通模式,返回Array.手风琴模式返回String",returnValue:"Array|String"},
