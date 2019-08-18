@@ -9,7 +9,7 @@ import Vue from 'vue'
 // import CascaderDemo from "./demo/cascader";
 // import TimePickerDemo from "./demo/time-picker";
 // import GridDemo from "./demo/grid";
-// import ContainerDemo from "./demo/container";
+import ContainerDemo from "./demo/container";
 // import CollapseDemo from "./demo/collapse";
 // import StickyDemo from "./demo/sticky";
 // import TabsDemo from "./demo/tabs";
@@ -27,5 +27,5 @@ Vue.use(MessagePlugin)
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+  render: h => h(ContainerDemo),
 }).$mount('#app')

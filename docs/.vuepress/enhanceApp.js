@@ -4,26 +4,11 @@ import css from 'highlight.js/lib/languages/css';
 import javascript from 'highlight.js/lib/languages/javascript';
 import vue from 'vue-highlight.js/lib/languages/vue';
 import 'highlight.js/styles/atom-one-dark.css';
-import MessagePlugin from "../../src/components/message";
+// import MessagePlugin from "../../src/components/message";
 
 
 
-// const datas = []
-// helloworld.replace(/glyph-name="(\w+)"/g,function (match,p) {
-//     datas.push(p)
-// })
-// console.log(datas);
-//
-// const file = new File([],"./icons/fonts/fontawesome-webfont.svg")
-// const reader = new FileReader()
-// reader.readAsText(file)
-// reader.onload = function (data) {
-//     console.log(this.result);
-// }
-// const fs = require("fs")
-// console.log(fs);
-// var data = fs.readFileSync('./icons/fonts/fontawesome-webfont.svg');
-// console.log(data.match(/glyph-name="\w+"/g));
+
 
 export default ({
                     Vue, // VuePress 正在使用的 Vue 构造函数
@@ -39,5 +24,8 @@ export default ({
             vue
         }
     })
-    Vue.use(MessagePlugin)
+
+        // Vue.use(MessagePlugin)
+
+
 }

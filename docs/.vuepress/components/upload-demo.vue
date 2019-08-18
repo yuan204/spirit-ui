@@ -73,6 +73,9 @@
     import SButton from "../../../src/components/button/button";
     import SIcon from "../../../src/components/icon/icon";
     import SUpload from "../../../src/components/upload/upload";
+    import Message from "../../../src/components/message";
+    import Vue from 'vue'
+    Vue.use(Message)
     export default {
         name: "upload-demo",
         components: {

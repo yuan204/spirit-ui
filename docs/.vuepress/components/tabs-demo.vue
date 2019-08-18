@@ -112,7 +112,8 @@
 <script>
     import DocFeature from "./common/feature";
     import DocSpec from "./common/spec";
-    import {STabPane,STabs} from "../../../src/components/tabs";
+    import STabs from "../../../src/components/tabs/tabs";
+    import STabPane from "../../../src/components/tabs/tab-pane";
     import SIcon from "../../../src/components/icon/icon";
     import DocSlot from "./common/slot";
     import DocEvent from "./common/event";

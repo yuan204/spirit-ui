@@ -72,7 +72,12 @@
 </template>
 
 <script>
-    import {SAside,SContainer,SFooter,SHeader,SMain} from "../../../src/components/container";
+
+    import SAside from "../../../src/components/container/aside";
+    import SContainer from "../../../src/components/container/container";
+    import SFooter from "../../../src/components/container/footer";
+    import SHeader from "../../../src/components/container/header";
+    import SMain from "../../../src/components/container/main";
     import DocMulFeature from "./common/mul-feature";
     import DocSpec from "./common/spec";
 

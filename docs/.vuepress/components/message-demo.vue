@@ -81,7 +81,9 @@
     import SButton from "../../../src/components/button/button";
     import DocFeature from "./common/feature";
     import DocSpec from "./common/spec";
-
+    import Message from "../../../src/components/message";
+    import Vue from 'vue'
+    Vue.use(Message)
     export default {
         name: "message-demo",
         components: {

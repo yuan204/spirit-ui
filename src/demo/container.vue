@@ -44,7 +44,11 @@
 </template>
 
 <script>
-    import {SAside,SContainer,SFooter,SHeader,SMain} from "@/components/container";
+    import SAside from "@/components/container/aside";
+    import SContainer from "@/components/container/container";
+    import SFooter from "@/components/container/footer";
+    import SHeader from "@/components/container/header";
+    import SMain from "@/components/container/main";
 
     export default {
         name: "ContainerDemo",

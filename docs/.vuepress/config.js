@@ -3,18 +3,21 @@ module.exports = {
     base: '/spirit-ui/',
     description: '一个基于vue的ui组件库',
     themeConfig: {
+        nav: [
+            { text: 'Home', link: '/' },
+            { text: 'Github', link: 'https://github.com/gaolei11/spirit-ui' }
+        ],
         sidebar: [
             {
                 title: "入门",
-                collapse: false,
+                collapsable: false,
                 children:[
-                    "/install",
                     "/start"
                 ]
             },
             {
                 title: "组件",
-                collapse: false,
+                collapsable: false,
                 children: [
                     "/components/icon",
                     "/components/button",
@@ -35,5 +38,6 @@ module.exports = {
                 ]
             }
         ]
+
     }
 }

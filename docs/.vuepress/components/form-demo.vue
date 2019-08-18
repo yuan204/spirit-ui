@@ -150,12 +150,15 @@
     import DocFeature from "./common/feature";
     import DocSpec from "./common/spec";
     import DocMethod from "./common/method";
-    import {SFormItem, SForm} from "../../../src/components/form";
+    import SForm from "../../../src/components/form/form";
+    import SFormItem from "../../../src/components/form/form-item";
     import SInput from "../../../src/components/input/input";
     import SButton from "../../../src/components/button/button";
     import SRadioGroup from "../../../src/components/radio/radio-group";
     import SRadio from "../../../src/components/radio/radio";
-
+    import Message from "../../../src/components/message";
+    import Vue from 'vue'
+    Vue.use(Message)
     export default {
         name: "form-demo",
         components: {

@@ -9,7 +9,7 @@
         name: "sContainer",
         mounted() {
             this.$children.forEach(child => {
-                if (["SpiritHeader","SpiritFooter"].includes(child.$options.name)){
+                if (["sHeader","sFooter"].includes(child.$options.name)){
                     this.direction = "column";
 
 

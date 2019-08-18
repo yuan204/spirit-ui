@@ -88,7 +88,8 @@
 </template>
 
 <script>
-    import {SCollapse,SCollapseItem} from "../../../src/components/collapse";
+    import SCollapse from "../../../src/components/collapse/collapse";
+    import SCollapseItem from "../../../src/components/collapse/collapse-item";
     import DocFeature from "./common/feature";
     import DocSpec from "./common/spec";
     import DocSlot from "./common/slot";
