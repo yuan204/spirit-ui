@@ -1,4 +1,5 @@
 # spirit-ui 
+![npm](https://img.shields.io/npm/dm/spirit-ui)
 ![GitHub](https://img.shields.io/github/license/gaolei11/spirit-ui)
 ![npm](https://img.shields.io/npm/v/spirit-ui)
 ## 介绍

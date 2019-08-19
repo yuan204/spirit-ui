@@ -82,7 +82,7 @@
             <s-tabs v-model="activeName" type = "card" closable @tab-remove = "handleClose">
                 <s-tab-pane label="标签一" name="name1" v-if="'name1' !== tabName" key="name1">
                     标签一的内容
-                </s-tab-pane><s-tab-pane label="标签二" name="name2" v-if="'name2' !== tabName" key="name2">标签二的内容</s-tab-pane><s-tab-pane label="标签三" name="name3" v-if="'name3' !== tabName" key="name3">标签三的内容</s-tab-pane>
+                </s-tab-pane><s-tab-pane label="标签二" name="name2" v-if="'name2' !== tabName" key="name2">标签二的内容</s-tab-pane>
             </s-tabs>
         </template>
     </doc-feature>
@@ -130,7 +130,7 @@
         },
         data() {
             return {
-                activeName: "name3",
+                activeName: "name1",
                 activeName2: "name2",
                 activeName3: "name2",
                 activeName4: "name2",

@@ -5,7 +5,7 @@ import ButtonDemo from "./demo/button";
 // import SwitchDemo from "./demo/switch";
 // import InputDemo from "./demo/input";
 // import RadioDemo from "./demo/radio";
-// import DatePickerDemo from "./demo/date-picker";
+import DatePickerDemo from "./demo/date-picker";
 // import CascaderDemo from "./demo/cascader";
 // import TimePickerDemo from "./demo/time-picker";
 // import GridDemo from "./demo/grid";
@@ -27,5 +27,5 @@ Vue.use(MessagePlugin)
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(PageDemo),
+  render: h => h(DatePickerDemo),
 }).$mount('#app')
