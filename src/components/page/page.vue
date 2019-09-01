@@ -108,6 +108,9 @@
 
 
         watch: {
+            currentPage(val) {
+                this.curPage = val;
+            },
             curPage(val,oldVal) {
                 let cp = val;
 

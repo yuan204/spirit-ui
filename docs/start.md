@@ -2,7 +2,7 @@
 ## 安装
 ```bash
 npm install spirit-ui
-
+或者
 yarn add spirit-ui
 ```
 

@@ -5,11 +5,11 @@
 ## 介绍
 一个基于vue 写的ui组件库.
 
-[官方文档](https://gaolei11.github.io/spirit-ui/) 
+[官方文档](https://yuan204.github.io/spirit-ui/) 
 ## 安装
 ```
  npm install spirit-ui
- 
+ 或者
  yarn add spirit-ui
 ```
 

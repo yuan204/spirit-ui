@@ -90,7 +90,6 @@
                     // console.log(this.$refs.icon);
                     this.$refs.icon[i].$el.style.display = "inline-block"
                     this.fileList[i].progress = false
-                    // this.$set(this.fileList,i, this.fileList[i])
                 }, 1000)
             },
             uploadFile(files) {
@@ -200,9 +199,7 @@
                     background-color: #f3f3f3;
                 }
 
-                /*&:hover .s-icon {*/
-                /*    display: inline-block;*/
-                /*}*/
+
             }
         }
 
